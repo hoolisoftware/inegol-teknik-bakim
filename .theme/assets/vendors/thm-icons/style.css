@@ -1,0 +1,489 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('fonts/icomoon78ed.eot?orkqwr');
+  src: url('fonts/icomoon78ed.eot?orkqwr#iefix') format('embedded-opentype'),
+    url('fonts/icomoon78ed.ttf?orkqwr') format('truetype'),
+    url('fonts/icomoon78ed.woff?orkqwr') format('woff'),
+    url('fonts/icomoon78ed.svg?orkqwr#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+
+
+
+.icon-phone:before {
+  content: "\e900";
+}
+
+.icon-worker:before {
+  content: "\e901";
+}
+
+.icon-family-insurance:before {
+  content: "\e902";
+}
+
+.icon-search-interface-symbol:before {
+  content: "\e903";
+}
+
+.icon-hamburger:before {
+  content: "\e904";
+}
+
+.icon-link:before {
+  content: "\e905";
+}
+
+.icon-bullet-list:before {
+  content: "\e906";
+}
+
+.icon-zoom:before {
+  content: "\e907";
+}
+
+.icon-remote-control-fast-forward-button:before {
+  content: "\e908";
+}
+
+.icon-right:before {
+  content: "\e909";
+}
+
+.icon-right-arrow:before {
+  content: "\e90a";
+}
+
+.icon-skyscrapers:before {
+  content: "\e90b";
+}
+
+.icon-left-arrow:before {
+  content: "\e90c";
+}
+
+.icon-rating:before {
+  content: "\e90d";
+}
+
+.icon-house:before {
+  content: "\e90e";
+}
+
+.icon-worker-1:before {
+  content: "\e90f";
+}
+
+.icon-building:before {
+  content: "\e910";
+}
+
+.icon-roof:before {
+  content: "\e911";
+}
+
+.icon-badge:before {
+  content: "\e912";
+}
+
+.icon-skyscrapers1:before {
+  content: "\e913";
+}
+
+.icon-construction:before {
+  content: "\e914";
+}
+
+.icon-folder:before {
+  content: "\e915";
+}
+
+.icon-joist:before {
+  content: "\e916";
+}
+
+.icon-newspaper:before {
+  content: "\e917";
+}
+
+.icon-budget:before {
+  content: "\e918";
+}
+
+.icon-roof1:before {
+  content: "\e919";
+}
+
+.icon-joist-1:before {
+  content: "\e91a";
+}
+
+.icon-reliability:before {
+  content: "\e91b";
+}
+
+.icon-phone1:before {
+  content: "\e91c";
+}
+
+.icon-roof-1:before {
+  content: "\e91d";
+}
+
+.icon-broken-house:before {
+  content: "\e91e";
+}
+
+.icon-deadline:before {
+  content: "\e91f";
+}
+
+.icon-fast-time:before {
+  content: "\e920";
+}
+
+.icon-log-out:before {
+  content: "\e921";
+}
+
+.icon-right-arrow-circular-button-outline:before {
+  content: "\e922";
+}
+
+.icon-roof-11:before {
+  content: "\e923";
+}
+
+.icon-map:before {
+  content: "\e924";
+}
+
+.icon-right-1:before {
+  content: "\e925";
+}
+
+.icon-engineer:before {
+  content: "\e926";
+}
+
+.icon-warranty:before {
+  content: "\e927";
+}
+
+.icon-inspection:before {
+  content: "\e928";
+}
+
+.icon-family:before {
+  content: "\e929";
+}
+
+.icon-full-screen:before {
+  content: "\e92a";
+}
+
+.icon-link1:before {
+  content: "\e92b";
+}
+
+.icon-quotation:before {
+  content: "\e92c";
+}
+
+.icon-complete:before {
+  content: "\e92d";
+}
+
+.icon-team:before {
+  content: "\e92e";
+}
+
+.icon-rating1:before {
+  content: "\e92f";
+}
+
+.icon-office:before {
+  content: "\e930";
+}
+
+.icon-play-button:before {
+  content: "\e931";
+}
+
+.icon-map1:before {
+  content: "\e932";
+}
+
+.icon-location:before {
+  content: "\e933";
+}
+
+.icon-envelope:before {
+  content: "\e934";
+}
+
+.icon-telephone:before {
+  content: "\e935";
+}
+
+.icon-facebook-app-symbol:before {
+  content: "\e936";
+}
+
+.icon-linkedin:before {
+  content: "\e937";
+}
+
+.icon-twitter:before {
+  content: "\e938";
+}
+
+.icon-google-plus-logo:before {
+  content: "\e939";
+}
+
+.icon-telephone-1:before {
+  content: "\e93a";
+}
+
+.icon-menus:before {
+  content: "\e93b";
+}
+
+.icon-menu:before {
+  content: "\e93c";
+}
+
+.icon-user:before {
+  content: "\e93d";
+}
+
+.icon-phone-call:before {
+  content: "\e93e";
+}
+
+.icon-write-message:before {
+  content: "\e93f";
+}
+
+.icon-pen-filled-writing-tool:before {
+  content: "\e940";
+}
+
+.icon-roof-2:before {
+  content: "\e941";
+}
+
+.icon-roof-3:before {
+  content: "\e942";
+}
+
+.icon-roof-4:before {
+  content: "\e943";
+}
+
+.icon-external-link:before {
+  content: "\e944";
+}
+
+.icon-checkmark:before {
+  content: "\e945";
+}
+
+.icon-link-1:before {
+  content: "\e946";
+}
+
+.icon-link-building:before {
+  content: "\e947";
+}
+
+.icon-phone-1:before {
+  content: "\e948";
+}
+
+.icon-bars:before {
+  content: "\e949";
+}
+
+.icon-menu-1:before {
+  content: "\e94a";
+}
+
+.icon-project:before {
+  content: "\e94b";
+}
+
+.icon-economy-forecast:before {
+  content: "\e94c";
+}
+
+.icon-newspaper1:before {
+  content: "\e94d";
+}
+
+.icon-newspaper-1:before {
+  content: "\e94e";
+}
+
+.icon-maps-and-flags:before {
+  content: "\e94f";
+}
+
+.icon-earthquake:before {
+  content: "\e950";
+}
+
+.icon-worker1:before {
+  content: "\e951";
+}
+
+.icon-happy:before {
+  content: "\e952";
+}
+
+.icon-house-repair:before {
+  content: "\e953";
+}
+
+.icon-worker-11:before {
+  content: "\e954";
+}
+
+.icon-family-1:before {
+  content: "\e955";
+}
+
+.icon-roof-5:before {
+  content: "\e956";
+}
+
+.icon-inspection-1:before {
+  content: "\e957";
+}
+
+.icon-guaranteed:before {
+  content: "\e958";
+}
+
+.icon-map-1:before {
+  content: "\e959";
+}
+
+.icon-map-2:before {
+  content: "\e95a";
+}
+
+.icon-house-1:before {
+  content: "\e95b";
+}
+
+.icon-plus:before {
+  content: "\e95c";
+}
+
+.icon-minus:before {
+  content: "\e95d";
+}
+
+.icon-next-button:before {
+  content: "\e95e";
+}
+
+.icon-telephone-2:before {
+  content: "\e95f";
+}
+
+.icon-appointment:before {
+  content: "\e960";
+}
+
+.icon-24-hours:before {
+  content: "\e961";
+}
+
+.icon-arrow-right:before {
+  content: "\e962";
+}
+
+.icon-send:before {
+  content: "\e963";
+}
+
+.icon-cancelation:before {
+  content: "\e964";
+}
+
+.icon-x:before {
+  content: "\e965";
+}
+
+.icon-maps:before {
+  content: "\e966";
+}
+
+.icon-email:before {
+  content: "\e967";
+}
+
+.icon-phone-2:before {
+  content: "\e968";
+}
+
+.icon-clock:before {
+  content: "\e969";
+}
+
+.icon-reliability1:before {
+  content: "\e96a";
+}
+
+.icon-arrow-right-1:before {
+  content: "\e96b";
+}
+
+.icon-quality:before {
+  content: "\e96c";
+}
+
+.icon-guarantee:before {
+  content: "\e96d";
+}
+
+.icon-down-arrow:before {
+  content: "\e96e";
+}
+
+.icon-draw-check-mark:before {
+  content: "\e96f";
+}
+
+.icon-allah:before {
+  content: "\e970";
+}
+
+.icon-play:before {
+  content: "\e971";
+}

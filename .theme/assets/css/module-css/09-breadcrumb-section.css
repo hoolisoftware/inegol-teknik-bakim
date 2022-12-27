@@ -1,0 +1,115 @@
+/*** 
+=============================================
+    Breadcrumb area style
+=============================================
+***/
+.breadcrumb-area {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 119px 0 128px;
+    z-index: 10;
+}
+
+.breadcrumb-area-bg {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    bottom: -20px;
+    right: 0;
+    background-attachment: scroll;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.breadcrumb-area-bg:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000000;
+    opacity: 0.20;
+    z-index: -1;
+}
+
+.breadcrumb-area .inner-content {
+    position: relative;
+    display: block;
+}
+
+.breadcrumb-area .title {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.breadcrumb-area .title h2 {
+    color: #ffffff;
+    font-size: 72px;
+    line-height: 1.2em;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+
+.breadcrumb-menu {
+    position: relative;
+    display: block;
+    line-height: 0;
+    padding-top: 4px;
+    z-index: 1;
+}
+
+.breadcrumb-menu ul {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.breadcrumb-menu ul li {
+    position: relative;
+    float: left;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding-right: 12px;
+    margin-right: 12px;
+}
+
+.breadcrumb-menu ul li:before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: 0;
+    bottom: 7px;
+    width: 1px;
+    background-color: #ffffff;
+    transform: rotate(12deg);
+}
+
+.breadcrumb-menu ul li:last-child:before {
+    display: none;
+}
+
+.breadcrumb-menu ul li:last-child {
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.breadcrumb-menu ul li a {
+    color: #ffffff;
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+}
+
+.breadcrumb-menu ul li:hover a,
+.breadcrumb-menu ul li.active {
+    color: #b5c3da;
+}
