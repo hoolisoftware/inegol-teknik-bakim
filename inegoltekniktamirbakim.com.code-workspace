@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "./"
+		},
+		{
+			"path": "./.theme"
+		},
+		{
+			"path": "./server/templates"
+		},
+		{
+			"path": "./server/templatetags"
+		},
+		{
+			"path": "./server/core/static"
+		},
+		{
+			"path": "./server/core"
+		},
+		{
+			"path": "./server/service"
+		}
+	],
+	"settings": {}
+}

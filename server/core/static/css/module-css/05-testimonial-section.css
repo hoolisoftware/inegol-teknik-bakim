@@ -1,0 +1,316 @@
+/*** 
+=============================================
+   Testimonial Style1 Area Css
+=============================================
+***/
+.testimonials-style1-area {
+    position: relative;
+    display: block;
+    background: #141e32;
+    padding: 120px 0px 120px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.testimonials-style1-area .map-layer {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-left: -300px;
+    opacity: 0.20;
+    z-index: -1;
+}
+
+.testimonial-style1-title-box {
+    position: relative;
+    display: block;
+}
+
+.testimonial-style1-title-box .sec-title {
+    padding-bottom: 0;
+}
+
+.testimonial-style1-title-box .sec-title h2 {
+    color: #ffffff;
+}
+
+
+.single-testimonials-style1 {
+    position: relative;
+    display: block;
+}
+
+.single-testimonials-style1__inner {
+    position: relative;
+    display: block;
+    background-color: #ffffff;
+    padding: 43px 40px 43px;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+
+
+.single-testimonials-style1__inner:before {
+    content: "";
+    position: absolute;
+    left: 62px;
+    bottom: -10px;
+    width: 45px;
+    height: 10px;
+    border-top: 10px solid #ffffff;
+    border-left: 22.5px solid transparent;
+    border-right: 22.5px solid transparent;
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+}
+
+.single-testimonials-style1 .quote-box {
+    position: relative;
+    display: block;
+    padding-bottom: 18px;
+}
+
+.single-testimonials-style1 .quote-box span {
+    position: relative;
+    display: block;
+    line-height: 0;
+}
+
+.single-testimonials-style1 .quote-box span:before {
+    color: var(--thm-base);
+    font-size: 60px;
+    line-height: 60px;
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+}
+
+
+.single-testimonials-style1 .text-box {
+    position: relative;
+    display: block;
+}
+
+.single-testimonials-style1 .text-box p {
+    color: #494949;
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+}
+
+
+.single-testimonials-style1 .customer-info {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    margin-left: 50px;
+}
+
+.single-testimonials-style1 .customer-info .img-box {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #646464;
+}
+
+.single-testimonials-style1 .customer-info .img-box:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    right: 0;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.7;
+    border-radius: 0%;
+    transition: -webkit-transform 0.4s ease;
+    transition: transform 0.4s ease;
+    transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+    transform-origin: top center;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    z-index: 1;
+}
+
+
+.single-testimonials-style1 .customer-info .img-box img {
+    width: 100%;
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+}
+
+.single-testimonials-style1:hover .customer-info .img-box img {
+    transform: scale(1.05);
+}
+
+.single-testimonials-style1 .customer-info .title-box {
+    position: relative;
+    padding-left: 25px;
+    flex: 1;
+}
+
+.single-testimonials-style1 .customer-info .title-box h3 {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 20px;
+    margin: 0 0 0px;
+}
+
+.single-testimonials-style1 .customer-info .title-box span {
+    position: relative;
+    display: inline-block;
+    color: var(--thm-base);
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 600;
+}
+
+
+.testimonial-style1-carousel.owl-nav-style-one.owl-theme .owl-nav {
+    position: absolute;
+    left: -410px;
+    bottom: 112px;
+}
+
+
+
+
+
+
+/*** 
+=============================================
+   Testimonial Style2 Area Css
+=============================================
+***/
+.testimonials-style2-area {
+    position: relative;
+    display: block;
+    background: #0f1728;
+    padding: 120px 0px 120px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.testimonials-style2-area__img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.testimonials-style2-area .sec-title h2 {
+    color: #ffffff;
+}
+
+.single-testimonials-style1--instyle2 .quote-box {
+    position: absolute;
+    bottom: 23px;
+    right: 30px;
+    padding-bottom: 0;
+}
+
+.single-testimonials-style1--instyle2 .single-testimonials-style1__inner {
+    padding: 43px 40px 73px;
+    border-radius: 8px;
+    border-top: 5px solid var(--thm-base);
+}
+
+.single-testimonials-style1--instyle2 .single-testimonials-style1__inner .review-box {
+    margin-bottom: 21px;
+}
+
+.single-testimonials-style1--instyle2 .single-testimonials-style1__inner:after {
+    border-radius: 8px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+
+
+
+/*** 
+=============================================
+   Testimonial Page Area Css
+=============================================
+***/
+.testimonials-page-one {
+    position: relative;
+    display: block;
+    background: #ffffff;
+    padding: 120px 0px 60px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.testimonials-page-one__title {
+    position: relative;
+    display: block;
+}
+
+.testimonials-page-one__title .sec-title {
+    padding-bottom: 0;
+}
+
+
+.testimonials-page-one .single-testimonials-style1 {
+    margin-bottom: 60px;
+}
+
+.testimonials-page-one .single-testimonials-style1__inner {
+    background-color: #fcfcfd;
+    padding: 43px 40px 43px;
+    border-radius: 8px;
+    border: 1px solid #f1f1f1;
+}
+
+.testimonials-page-one .single-testimonials-style1__inner:before {
+    display: none;
+}
+
+.testimonials-page-one .single-testimonials-style1__inner .down-arrow {
+    position: absolute;
+    left: 60px;
+    bottom: -17px;
+}
+
+.testimonials-page-one .single-testimonials-style1 .customer-info .title-box h3 {
+    color: var(--thm-black);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** End Css***/

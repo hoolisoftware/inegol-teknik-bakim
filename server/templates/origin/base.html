@@ -1,0 +1,183 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{% block title %}{% endblock title %} - İnegöl Teknik Bakım Tamir</title>
+        <link rel="apple-touch-icon"
+              sizes="180x180"
+              href="{% static '' %}images/favicons/apple-touch-icon.png"/>
+        <link rel="icon"
+              type="image/png"
+              sizes="32x32"
+              href="{% static '' %}images/favicons/favicon-32x32.png"/>
+        <link rel="icon"
+              type="image/png"
+              sizes="16x16"
+              href="{% static '' %}images/favicons/favicon-16x16.png"/>
+        <link rel="manifest" href="{% static '' %}images/favicons/site.webmanifest" />
+        <meta name="description" content="Roofan HTML 5 Template " />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+              rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+              rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&amp;display=swap"
+              rel="stylesheet">
+        <link rel="stylesheet"
+              href="{% static '' %}vendors/animate/animate.min.css"/>
+        <link rel="stylesheet"
+              href="{% static '' %}vendors/animate/custom-animate.css"/>
+        <link rel="stylesheet"
+              href="{% static '' %}vendors/bootstrap/css/bootstrap.min.css"/>
+        <link rel="stylesheet"
+              href="{% static '' %}vendors/bxslider/jquery.bxslider.css"/>
+        <link rel="stylesheet"
+              href="{% static '' %}vendors/fontawesome/css/all.min.css"/>
+        <link rel="stylesheet"
+              href="{% static '' %}vendors/jquery-magnific-popup/jquery.magnific-popup.css"/>
+        <link rel="stylesheet"
+              href="{% static '' %}vendors/jquery-ui/jquery-ui.css"/>
+        <link rel="stylesheet"
+              href="{% static '' %}vendors/nice-select/nice-select.css"/>
+        <link rel="stylesheet"
+              href="{% static '' %}vendors/odometer/odometer.min.css"/>
+        <link rel="stylesheet"
+              href="{% static '' %}vendors/owl-carousel/owl.carousel.min.css"/>
+        <link rel="stylesheet"
+              href="{% static '' %}vendors/owl-carousel/owl.theme.default.min.css"/>
+        <link rel="stylesheet" href="{% static '' %}vendors/swiper/swiper.min.css" />
+        <link rel="stylesheet" href="{% static '' %}vendors/vegas/vegas.min.css" />
+        <link rel="stylesheet" href="{% static '' %}vendors/thm-icons/style.css">
+        <link rel="stylesheet"
+              href="{% static '' %}vendors/language-switcher/polyglot-language-switcher.css">
+        <link rel="stylesheet"
+              href="{% static '' %}vendors/fancybox/fancybox.min.css">
+        <link rel="stylesheet" href="{% static '' %}vendors/aos/aos.css">
+        <link rel="stylesheet"
+              href="{% static '' %}css/module-css/01-header-section.css">
+        <link rel="stylesheet"
+              href="{% static '' %}css/module-css/02-banner-section.css">
+        <link rel="stylesheet"
+              href="{% static '' %}css/module-css/03-about-section.css">
+        <link rel="stylesheet"
+              href="{% static '' %}css/module-css/04-fact-counter-section.css">
+        <link rel="stylesheet"
+              href="{% static '' %}css/module-css/05-testimonial-section.css">
+        <link rel="stylesheet"
+              href="{% static '' %}css/module-css/06-partner-section.css">
+        <link rel="stylesheet"
+              href="{% static '' %}css/module-css/07-footer-section.css">
+        <link rel="stylesheet"
+              href="{% static '' %}css/module-css/08-blog-section.css">
+        <link rel="stylesheet"
+              href="{% static '' %}css/module-css/09-breadcrumb-section.css">
+        <link rel="stylesheet" href="{% static '' %}css/module-css/10-contact.css">
+        <link rel="stylesheet" href="{% static '' %}css/style.css" />
+        <link rel="stylesheet" href="{% static '' %}css/responsive.css" />
+        {% block styles %}{% endblock styles %}
+    </head>
+    <body>
+        {% include './loader.html' %}
+        <div class="page-wrapper boxed_wrapper">
+            {% include 'origin/header.html' %}
+            {% block content %}{% endblock content %}
+            {% include 'origin/footer.html' %}
+        </div>
+        <div class="mobile-nav__wrapper">
+            <div class="mobile-nav__overlay mobile-nav__toggler">
+            </div>
+            <div class="mobile-nav__content">
+                <span class="mobile-nav__close mobile-nav__toggler">
+                    <i class="icon-x"></i>
+                </span>
+                <div class="logo-box">
+                    <a href="index.html" aria-label="logo image">
+                        <img src="{% static '' %}images/resources/mobile-nav-logo.png" alt="" />
+                    </a>
+                </div>
+                <div class="mobile-nav-search-box">
+                    <form class="search-form" action="#">
+                        <input placeholder="Keyword" type="text">
+                        <button type="submit">
+                            <i class="icon-search-interface-symbol"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="mobile-nav__container">
+                </div>
+                <ul class="mobile-nav__contact list-unstyled">
+                    <li>
+                        <i class="fa fa-envelope"></i>
+                        <a href="mailto:info@example.com">info@example.com</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-phone-alt"></i>
+                        <a href="tel:123456789">444 000 777 66</a>
+                    </li>
+                </ul>
+                <div class="mobile-nav__social">
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-facebook-square"></a>
+                    <a href="#" class="fab fa-pinterest-p"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="search-popup">
+            <div class="search-popup__overlay search-toggler">
+            </div>
+            <div class="search-popup__content">
+                <form action="#">
+                    <label for="search" class="sr-only">
+                        search here
+                    </label>
+                    <input type="text" id="search" placeholder="Search Here..." />
+                    <button type="submit" aria-label="search submit" class="thm-btn">
+                        <i class="icon-search-interface-symbol"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="scroll-to-top">
+            <div>
+                <div class="scroll-top-inner">
+                    <div class="scroll-bar">
+                        <div class="bar-inner">
+                        </div>
+                    </div>
+                    <div class="scroll-bar-text">
+                        Go To Top
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="{% static '' %}vendors/jquery/jquery-3.6.0.min.js"></script>
+        <script src="{% static '' %}vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="{% static '' %}vendors/bxslider/jquery.bxslider.min.js"></script>
+        <script src="{% static '' %}vendors/circleType/jquery.circleType.js"></script>
+        <script src="{% static '' %}vendors/circleType/jquery.lettering.min.js"></script>
+        <script src="{% static '' %}vendors/isotope/isotope.js"></script>
+        <script src="{% static '' %}vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js"></script>
+        <script src="{% static '' %}vendors/jquery-appear/jquery.appear.min.js"></script>
+        <script src="{% static '' %}vendors/jquery-magnific-popup/jquery.magnific-popup.min.js"></script>
+        <script src="{% static '' %}vendors/jquery-migrate/jquery-migrate.min.js"></script>
+        <script src="{% static '' %}vendors/jquery-ui/jquery-ui.js"></script>
+        <script src="{% static '' %}vendors/jquery-validate/jquery.validate.min.js"></script>
+        <script src="{% static '' %}vendors/nice-select/jquery.nice-select.min.js"></script>
+        <script src="{% static '' %}vendors/odometer/odometer.min.js"></script>
+        <script src="{% static '' %}vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="{% static '' %}vendors/swiper/swiper.min.js"></script>
+        <script src="{% static '' %}vendors/vegas/vegas.min.js"></script>
+        <script src="{% static '' %}vendors/wnumb/wNumb.min.js"></script>
+        <script src="{% static '' %}vendors/wow/wow.js"></script>
+        <script src="{% static '' %}vendors/extra-scripts/jquery.paroller.min.js"></script>
+        <script src="{% static '' %}vendors/language-switcher/jquery.polyglot.language.switcher.js"></script>
+        <script src="{% static '' %}vendors/extra-scripts/jquery-sidebar-content.js"></script>
+        <script src="{% static '' %}vendors/fancybox/jquery.fancybox.js"></script>
+        <script src="{% static '' %}vendors/aos/aos.js"></script>
+        <script src="{% static '' %}vendors/extra-scripts/TweenMax.min.js"></script>
+        <script src="{% static '' %}js/custom.js"></script>
+        {% block scripts %}{% endblock scripts %}
+    </body>
+</html>

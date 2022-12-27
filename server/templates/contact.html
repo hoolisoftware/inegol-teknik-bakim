@@ -1,0 +1,186 @@
+{% extends 'origin/base.html' %}
+
+{% load custom_templatetags %}
+
+{% block title %}
+    İletişim
+{% endblock title %}
+{% block content %}
+    <!--Start breadcrumb area-->
+    <section class="breadcrumb-area">
+        <div class="breadcrumb-area-bg paroller"
+             style=" background-image: url(assets/images/breadcrumb/breadcrumb-1.jpg); ">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="inner-content">
+                        <div class="title">
+                            <h2>Contact Us</h2>
+                        </div>
+                        <div class="breadcrumb-menu">
+                            <ul>
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li class="active">Contact Us</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End breadcrumb area-->
+    <!--Start Main Contact Form Area-->
+    <section class="main-contact-form-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8">
+                    <div class="contact-form">
+                        <div class="sec-title">
+                            <h2>Mesaj bırakın</h2>
+                        </div>
+                        <form id="contact-form"
+                              name="contact_form"
+                              class="default-form2"
+                              action="https://mehedi.asiandevelopers.com/demo/roofan-html/assets/inc/sendmail.php"
+                              method="post">
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <div class="form-group">
+                                        <div class="input-box">
+                                            <input type="text"
+                                                   name="form_name"
+                                                   id="formName"
+                                                   placeholder="Your Name"
+                                                   required=""/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="form-group">
+                                        <div class="input-box">
+                                            <input type="email"
+                                                   name="form_email"
+                                                   id="formEmail"
+                                                   placeholder="Your Email"
+                                                   required=""/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <div class="form-group">
+                                        <div class="input-box">
+                                            <input type="text"
+                                                   name="form_phone"
+                                                   value=""
+                                                   id="formPhone"
+                                                   placeholder="Phone"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="form-group">
+                                        <div class="input-box">
+                                            <input type="text"
+                                                   name="form_subject"
+                                                   value=""
+                                                   id="formSubject"
+                                                   placeholder="Subject"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="form-group">
+                                        <div class="input-box">
+                                            <textarea name="form_message"
+                                                      id="formMessage"
+                                                      placeholder="Message"
+                                                      required=""></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="button-box">
+                                        <input id="form_botcheck"
+                                               name="form_botcheck"
+                                               class="form-control"
+                                               type="hidden"
+                                               value=""/>
+                                        <button class="btn-one" type="submit" data-loading-text="Please wait...">
+                                            <span class="txt">
+                                                Gönder <i class="icon-right"></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="contact-info-box-style1">
+                        <div class="title">
+                            <h2>İletişim Bilgileri</h2>
+                        </div>
+                        <ul class="contact-info-1">
+                            <li>
+                                <div class="icon">
+                                    <span class="icon-location"></span>
+                                </div>
+                                <div class="text">
+                                    <h3>Address:</h3>
+                                    <p>
+                                        <a href="https://goo.gl/maps/1L9Qcj4dWvmauqpr7">
+                                            {% get_setting 'address' %}
+                                        </a>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <span class="icon-telephone"></span>
+                                </div>
+                                <div class="text">
+                                    <h3>Phone :</h3>
+                                    <p>
+                                        <a href="tel:{% get_setting 'contact_number' %}">{% get_setting 'contact_number' %}</a>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <span class="icon-envelope"></span>
+                                </div>
+                                <div class="text">
+                                    <h3>Email :</h3>
+                                    <p>
+                                    <a href="mailto:{% get_setting 'email' %}">{% get_setting 'email' %}</a
+                                    >
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="google-map-outer-box">
+            <!--Google Map Start-->
+            <div class="google-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3052.603340219855!2d29.49109091532161!3d40.08425917940514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cbcbe97daef5c7%3A0x260cbb09455bf118!2zU8O8bGV5bWFuaXllLCBUdcSfcmEgU2suIE5vOjgsIDE2NDAwIMSwbmVnw7ZsL0J1cnNh!5e0!3m2!1sen!2str!4v1672146375283!5m2!1sen!2str" height="450" style="border:0; width: 100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <!--Google Map End-->
+        </div>
+    </div>
+</section>
+<!--End Main Contact Form Area-->
+{% endblock content %}

@@ -1,0 +1,84 @@
+{% extends 'origin/base.html' %}
+{% load custom_templatetags %}
+{% block title %}
+    {{ object.title }}
+{% endblock title %}
+{% block content %}
+    <div class="stricky-header stricked-menu main-menu">
+        <div class="sticky-header__content"></div>
+        <!-- /.sticky-header__content -->
+    </div>
+    <!-- /.stricky-header -->
+    <!--Start breadcrumb area-->
+    <section class="breadcrumb-area">
+        <div class="breadcrumb-area-bg paroller"
+             style="background-image: url(assets/images/breadcrumb/breadcrumb-1.jpg);">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="inner-content">
+                        <div class="title">
+                            <h2>New Roof Installation</h2>
+                        </div>
+                        <div class="breadcrumb-menu">
+                            <ul>
+                                <li>
+                                    <a href="index.html">Ana Sayfa</a>
+                                </li>
+                                <li>
+                                    <a href="services.html">Hizmetlermiz</a>
+                                </li>
+                                <li>{{ object.title }}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End breadcrumb area-->
+    <!--Start Service Details Style4 -->
+    <section class="service-details-style4">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9">
+                    <div class="service-details-style4__content">
+                        <div class="service-details-style4-img-box">
+                            <img style="height: 400px; width: 100%; object-fit: contain" src="{{ object.thumbnails.first }}" alt="">
+                        </div>
+                        <div class="service-details-style4-text-box">
+                            <h2>{{ object.title }}</h2>
+                            <div class="text-1">
+                                <p>
+                                    {{ object.content|markdown }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="service-details-sidebar-box">
+                        <!--Start Service Details Page Links-->
+                        <div class="service-details-page-links">
+                            <div class="inner-title">
+                                <h3>Hizmetlerimiz</h3>
+                                <div class="border-box"></div>
+                            </div>
+                            <ul>
+                                {% get_services as services %}
+                                {% for service in services %}
+                                    <li>
+                                        <a href="{{ service.get_absolute_url }}">{{ service.title }}</a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        <!--End Service Details Page Links-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Service Details Style4 -->
+{% endblock content %}

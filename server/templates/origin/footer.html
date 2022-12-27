@@ -1,0 +1,74 @@
+{% load static %}
+{% load custom_templatetags %}
+
+<div class="bottom-parallax">
+    <footer class="footer-area">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-top__inner">
+                    <ul class="footer-contact-info-box1">
+                        <li>
+                            <div class="footer-contact-info-box1__single">
+                                <div class="icon">
+                                    <span class="icon-location"></span>
+                                </div>
+                                <div class="text">
+                                    <p>
+                                        {% get_setting 'address' %}
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="footer-contact-info-box1__single">
+                                <div class="icon">
+                                    <span class="icon-envelope"></span>
+                                </div>
+                                <div class="text">
+                                    <p>
+                                        Email us:
+                                    </p>
+                                    <h5>
+                                        <a href="{% get_setting 'email' %}">{% get_setting 'email' %}</a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="footer-contact-info-box1__single">
+                                <div class="icon">
+                                    <span class="icon-telephone"></span>
+                                </div>
+                                <div class="text">
+                                    <p>
+                                        Call us on:
+                                    </p>
+                                    <h5>
+                                        <a href="tel:2512353256">{% get_setting 'contact_number' %}</a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="bottom-inner">
+                    <div class="copyright-text">
+                        <p>
+                            &copy; Copyright <a href="index.html">İNEGÖL TEKNİK BAKIM</a>
+                            <br>
+                        </p>
+                    </div>
+                    <div class="footer-bottom-right">
+                        <p>
+                            Created by <a href="https://www.alphasoftware.com">Alpha Software</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>

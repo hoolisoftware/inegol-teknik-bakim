@@ -1,0 +1,457 @@
+/*** 
+=============================================
+    Footer area style
+=============================================
+***/
+.bottom-parallax {
+    position: relative;
+    height: 537px;
+    opacity: 0;
+    z-index: -999;
+}
+
+.bottom-parallax .footer-area {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    height: 537px;
+}
+
+.parallax-visible .bottom-parallax {
+    opacity: 1;
+    z-index: 1;
+}
+
+
+
+/*** 
+=============================================
+    Footer Area Css
+=============================================
+***/
+.footer-area {
+    position: relative;
+    display: block;
+    background: #0a1222;
+    z-index: 10;
+}
+
+.footer-top {
+    position: relative;
+    display: block;
+}
+
+.footer-top__inner {
+    position: relative;
+    display: block;
+}
+
+.footer-contact-info-box1 {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-contact-info-box1 li {
+    flex: 0 0 auto;
+    width: 33.3333333333%;
+    padding: 20px 0;
+}
+
+.footer-contact-info-box1 li+li {
+    border-left: 1px solid #1f2839;
+    padding-left: 60px;
+}
+
+.footer-contact-info-box1__single {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.footer-contact-info-box1__single .icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    z-index: 1;
+}
+
+.footer-contact-info-box1 li:first-child .footer-contact-info-box1__single .icon {
+    font-size: 30px;
+}
+
+
+.footer-contact-info-box1__single .icon:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0px;
+    right: 0;
+    border-radius: 8px;
+    background-color: var(--thm-base);
+    transition: -webkit-transform 0.4s ease;
+    transition: transform 0.4s ease;
+    transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+    transform-origin: top right;
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
+    z-index: -1;
+}
+
+.footer-contact-info-box1 li:hover .footer-contact-info-box1__single .icon:before {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    transform-origin: bottom center;
+}
+
+.footer-contact-info-box1__single .text {
+    position: relative;
+    margin-left: 25px;
+    flex: 1;
+}
+
+.footer-contact-info-box1__single .text p {
+    color: #ffffff;
+    line-height: 24px;
+}
+
+.footer-contact-info-box1__single .text h5 {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 500;
+    font-family: var(--thm-font-2);
+    margin: 7px 0 0;
+}
+
+.footer-contact-info-box1__single .text h5 a {
+    color: #ffffff;
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+}
+
+.footer-contact-info-box1__single .text h5 a:hover {
+    color: var(--thm-base);
+}
+
+
+
+
+.footer-main {
+    position: relative;
+    display: block;
+    border-top: 1px solid #1f2839;
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+
+.single-footer-widget .title {
+    position: relative;
+    display: block;
+    margin-top: -2px;
+}
+
+.single-footer-widget .title h3 {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.footer-main .single-widget {
+    margin-bottom: 44px;
+}
+
+
+.single-footer-widget {
+    position: relative;
+    display: block;
+}
+
+.single-footer-widget.margin-leftminus1 {
+    margin-left: -50px;
+}
+
+.single-footer-widget.margin-leftminus2 {
+    margin-left: -40px;
+}
+
+.single-footer-widget .our-company-info {
+    position: relative;
+    display: block;
+    padding-right: 110px;
+}
+
+.footer-logo-style1 {
+    position: relative;
+    display: block;
+    padding-bottom: 31px;
+}
+
+.footer-logo-style1 a {
+    position: relative;
+    display: inline-block;
+}
+
+.single-footer-widget .our-company-info .text {
+    position: relative;
+    display: block;
+}
+
+.single-footer-widget .our-company-info .text p {
+    color: #909398;
+    font-size: 17px;
+    line-height: 28px;
+}
+
+
+
+.footer-widget-links {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding-top: 29px;
+}
+
+.single-footer-widget--link-box {
+    position: relative;
+}
+
+.footer-widget-links ul {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.footer-widget-links ul li {
+    position: relative;
+    display: block;
+    line-height: 26px;
+    margin-bottom: 11px;
+}
+
+.footer-widget-links ul li:last-child {
+    margin-bottom: 0;
+}
+
+.footer-widget-links ul li a {
+    position: relative;
+    display: inline-block;
+    color: #909398;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: var(--thm-font);
+    transition: all 100ms linear;
+    transition-delay: 0.1s;
+}
+
+.footer-widget-links ul li a:hover {
+    color: #ffffff;
+    padding-left: 2px;
+}
+
+
+
+.footer-widget-newsletter-box {
+    position: relative;
+    display: block;
+    padding-top: 28px;
+}
+
+.footer-widget-newsletter-box p {
+    color: #909398;
+    font-size: 17px;
+    margin: 0 0 13px;
+}
+
+.footer-widget-newsletter-box .form-group {
+    position: relative;
+    display: block;
+    margin: 0;
+}
+
+.footer-widget-newsletter-box .form-group input[type='email'] {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 50px;
+    color: #8c9199;
+    font-size: 17px;
+    font-weight: 400;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    padding-left: 25px;
+    padding-right: 60px;
+    border-radius: 7px;
+}
+
+.footer-widget-newsletter-box .form-group button {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 55px;
+    height: 50px;
+    line-height: 50px;
+    transition: all 300ms ease 100ms;
+    font-size: 20px;
+    padding: 0;
+    background: var(--thm-base);
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.footer-widget-newsletter-box .form-group button i {
+    color: #ffffff;
+}
+
+
+
+.footer-social-link {
+    position: relative;
+    display: block;
+    padding-top: 30px;
+}
+
+.footer-social-link ul {
+    position: relative;
+    display: block;
+}
+
+.footer-social-link ul li {
+    position: relative;
+    float: left;
+    margin-right: 10px;
+}
+
+.footer-social-link ul li:last-child {
+    margin-right: 0;
+}
+
+.footer-social-link ul li a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    background: rgba(255, 255, 255, 0.10);
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+    z-index: 1;
+}
+
+.footer-social-link ul li a:before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background: #ffffff;
+    border-radius: 50%;
+    content: "";
+    opacity: 0;
+    transform: scale(0.5);
+    transform-style: preserve-3d;
+    transition: all 0.4s cubic-bezier(0.62, 0.21, 0.45, 1.52);
+    z-index: -1;
+}
+
+.footer-social-link ul li:hover a:before {
+    opacity: 1.0;
+    transform: scale(1.0);
+}
+
+.footer-social-link ul li:hover a {
+    color: var(--thm-base);
+    border-color: var(--thm-base);
+}
+
+
+
+
+
+.footer-bottom {
+    position: relative;
+    display: block;
+}
+
+.footer-bottom .bottom-inner {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 26px 0px 26px;
+    border-top: 1px solid #1f2839;
+}
+
+.copyright-text {
+    position: relative;
+    display: block;
+}
+
+.copyright-text p {
+    color: #909398;
+    font-size: 17px;
+}
+
+.copyright-text p a {
+    color: #909398;
+    font-weight: 500;
+    transition: all 300ms ease 100ms;
+}
+
+.copyright-text p a:hover {
+    color: #ffffff;
+}
+
+.footer-bottom-right {
+    position: relative;
+    display: block;
+}
+
+.footer-bottom-right p {
+    color: #909398;
+    font-size: 17px;
+}
+
+.footer-bottom-right p a {
+    color: #909398;
+    font-weight: 500;
+    transition: all 300ms ease 100ms;
+}
+
+.footer-bottom-right p a:hover {
+    color: #ffffff;
+}
+
+
+.footer-area-img-box {
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    z-index: -1;
+}
+
+
+
+
+
+/**  End Css  **/
