@@ -39,10 +39,10 @@ class Service(models.Model):
 
 
 class FeedbackRequest(models.Model): 
-    content = models.TextField(null=True, blank=True)
-    name = models.CharField(max_length=255)
-    email = models.EmailField()
-    website = models.URLField(null=True, blank=True)
+    content = models.TextField("Mesajınız", null=True, blank=True)
+    name = models.CharField("İsim Soyisim *", max_length=255)
+    email = models.EmailField("E-posta *")
+    website = models.URLField("Websiteniz", null=True, blank=True)
 
 
 class Settings(SingletonModel): 

@@ -35,86 +35,33 @@
     <!--Start Main Contact Form Area-->
     <section class="main-contact-form-area">
         <div class="container">
+            {% if messages %}
+                <ul class="messages">
+                    {% for message in messages %}
+                        <div class="alert alert-primary" role="alert">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                </ul>
+            {% endif %}
             <div class="row">
                 <div class="col-xl-8">
                     <div class="contact-form">
                         <div class="sec-title">
                             <h2>Mesaj bırakın</h2>
                         </div>
-                        <form id="contact-form"
-                              name="contact_form"
+                        <form
                               class="default-form2"
-                              action="https://mehedi.asiandevelopers.com/demo/roofan-html/assets/inc/sendmail.php"
+                              action="{% url 'service:contact' %}"
                               method="post">
-                            <div class="row">
-                                <div class="col-xl-6">
-                                    <div class="form-group">
-                                        <div class="input-box">
-                                            <input type="text"
-                                                   name="form_name"
-                                                   id="formName"
-                                                   placeholder="Your Name"
-                                                   required=""/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="form-group">
-                                        <div class="input-box">
-                                            <input type="email"
-                                                   name="form_email"
-                                                   id="formEmail"
-                                                   placeholder="Your Email"
-                                                   required=""/>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xl-6">
-                                    <div class="form-group">
-                                        <div class="input-box">
-                                            <input type="text"
-                                                   name="form_phone"
-                                                   value=""
-                                                   id="formPhone"
-                                                   placeholder="Phone"/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="form-group">
-                                        <div class="input-box">
-                                            <input type="text"
-                                                   name="form_subject"
-                                                   value=""
-                                                   id="formSubject"
-                                                   placeholder="Subject"/>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xl-12">
-                                    <div class="form-group">
-                                        <div class="input-box">
-                                            <textarea name="form_message"
-                                                      id="formMessage"
-                                                      placeholder="Message"
-                                                      required=""></textarea>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="row mb-3">
+                                {% csrf_token %}
+                                {{ form.as_p }}
                             </div>
                             <div class="row">
                                 <div class="col-xl-12">
                                     <div class="button-box">
-                                        <input id="form_botcheck"
-                                               name="form_botcheck"
-                                               class="form-control"
-                                               type="hidden"
-                                               value=""/>
-                                        <button class="btn-one" type="submit" data-loading-text="Please wait...">
+                                        <button class="btn-one" type="submit" >
                                             <span class="txt">
                                                 Gönder <i class="icon-right"></i>
                                             </span>
