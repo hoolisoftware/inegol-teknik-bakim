@@ -2,6 +2,15 @@
 	"folders": [
 		{
 			"path": "."
-		}
+		},
+		{
+			"path": "./server/templates"
+		},
+		{
+			"path": "./server/core"
+		},
+		{
+			"path": "./server"
+		},
 	]
 }
