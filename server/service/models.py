@@ -21,20 +21,27 @@ class SingletonModel(models.Model):
 
 
 class Thumbnail(models.Model): 
-    image = models.ImageField(upload_to='service/thumbnails/')
+    image = models.ImageField('Görüntü', upload_to='service/thumbnails/')
     def __str__(self):
         return f'{self.image.url}'
+    class Meta:
+        verbose_name = 'Hizmet Görüntüsü'
+        verbose_name_plural = 'Hizmet Görüntüleri'
 
 
 class Service(models.Model): 
-    title = models.CharField(max_length=255)
-    slug = AutoSlugField(populate_from='title', unique=True)
-    content = models.TextField()
-    excerpt = models.TextField(blank=True, null=True)
-    thumbnails = models.ManyToManyField(to=Thumbnail, blank=True)
+    title = models.CharField('Başlık', max_length=255)
+    slug = AutoSlugField('Slug', populate_from='title', unique=True)
+    content = models.TextField('İçerik')
+    excerpt = models.TextField('Kısa İçerik', blank=True, null=True)
+    thumbnails = models.ManyToManyField(verbose_name='Görüntüler', to=Thumbnail, blank=True)
 
     def get_absolute_url(self):
         return reverse("service:service-detail", kwargs={"pk": self.pk})
+
+    class Meta:
+        verbose_name = 'Hizmet'
+        verbose_name_plural = 'Hizmetler'
     
 
 
@@ -44,12 +51,17 @@ class FeedbackRequest(models.Model):
     email = models.EmailField("E-posta *")
     website = models.URLField("Websiteniz", null=True, blank=True)
 
+    class Meta:
+        verbose_name = 'Geri Dönüş Talebi'
+        verbose_name_plural = 'Geri Dönüş Talepleri'
+
 
 class Settings(SingletonModel): 
-    contact_number = models.TextField(blank=True)
-    contact_number_wa = models.TextField(blank=True)
-    address = models.TextField(blank=True)
-    email = models.EmailField(blank=True)
+    contact_number = models.TextField('Telefon Numarası', blank=True)
+    contact_number_wa = models.TextField('Telefon Numarası (Whatsapp)', blank=True)
+    address = models.TextField('Adres', blank=True)
+    email = models.EmailField('Kurumsal Eposta', blank=True)
     
     class Meta:
-        verbose_name_plural = 'settings'
+        verbose_name = 'Ayar'
+        verbose_name_plural = 'Ayarlar'

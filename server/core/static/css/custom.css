@@ -1,0 +1,15 @@
+.wa-btn
+{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: white;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background: #128C7E;
+}
+
