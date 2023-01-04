@@ -44,7 +44,7 @@
                                         7/24 bizi arayınız :
                                     </p>
                                     <h5>
-                                        <a href="tel:2512353256">{% get_setting 'contact_number' %}</a>
+                                        <a href="tel:{% get_setting 'contact_number' %}">{% get_setting 'contact_number_str' %}</a>
                                     </h5>
                                 </div>
                             </div>
@@ -72,6 +72,6 @@
         </div>
     </footer>
 </div>
-<div class="wa-button">
+<a class="wa-btn" href="https://wa.me/9{% get_setting 'contact_number_wa' %}">
     <i class="fa-brands fa-whatsapp"></i>
-</div>
+</a>

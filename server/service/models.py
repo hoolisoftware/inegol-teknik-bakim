@@ -57,8 +57,9 @@ class FeedbackRequest(models.Model):
 
 
 class Settings(SingletonModel): 
-    contact_number = models.TextField('Telefon Numarası', blank=True)
-    contact_number_wa = models.TextField('Telefon Numarası (Whatsapp)', blank=True)
+    contact_number = models.TextField('Telefon Numarası (0\'dan başlayan)', blank=True)
+    contact_number_str = models.TextField('Telefon Numarası (Görsel İçerik)', blank=True)
+    contact_number_wa = models.TextField('Telefon Numarası (Whatsapp 0\'dan başlayan)', blank=True)
     address = models.TextField('Adres', blank=True)
     email = models.EmailField('Kurumsal Eposta', blank=True)
     

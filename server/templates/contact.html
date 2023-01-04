@@ -1,5 +1,6 @@
 {% extends 'origin/base.html' %}
 
+{% load static %}
 {% load custom_templatetags %}
 
 {% block title %}
@@ -9,7 +10,7 @@
     <!--Start breadcrumb area-->
     <section class="breadcrumb-area">
         <div class="breadcrumb-area-bg paroller"
-             style=" background-image: url(assets/images/breadcrumb/breadcrumb-1.jpg); ">
+            style="background-image: url({% static 'images/home-heading.webp' %})">
         </div>
         <div class="container">
             <div class="row">
@@ -96,9 +97,9 @@
                                     <span class="icon-telephone"></span>
                                 </div>
                                 <div class="text">
-                                    <h3>Phone :</h3>
+                                    <h3>Telefon :</h3>
                                     <p>
-                                        <a href="tel:{% get_setting 'contact_number' %}">{% get_setting 'contact_number' %}</a>
+                                        <a href="tel:{% get_setting 'contact_number' %}">{% get_setting 'contact_number_str' %}</a>
                                     </p>
                                 </div>
                             </li>
